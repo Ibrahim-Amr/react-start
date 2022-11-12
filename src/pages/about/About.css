@@ -1,0 +1,74 @@
+/* GENERAL */
+body {
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+
+p {
+   color: var(--clr-gray);
+}
+
+i {
+   font-size: 2rem;
+}
+
+:root {
+   --fs-large: clamp(1.5rem, 5vw + 1rem, 5rem);
+   --fs-2rem: 2rem;
+   --fs-50: 50px;
+   --fw-200: 200;
+   --fw-400: 400;
+   --fw-600: 600;
+   --fw-800: 800;
+   --clr-gray: #4e4e4e;
+   --main-clr: #343434;
+}
+/* START ABOUT SECTION */
+
+.about .about-img img {
+   width: 85%;
+}
+
+.about .about-img::after {
+   content: '';
+   width: 80%;
+   height: 80%;
+   position: absolute;
+   left: 10px;
+   bottom: -30px;
+   background-repeat: repeat;
+   z-index: -1;
+}
+
+.about .about-content header h3 {
+   font-size: var(--fs-2rem);
+   font-weight: var(--fw-800);
+   margin-bottom: 5px;
+}
+
+.about .about-content header span {
+   letter-spacing: 2px;
+   font-weight: 400;
+   font-size: 14px;
+}
+
+/* ABOUT SECTION END */
+/* SECTIONS HEADER */
+.title h3 {
+   font-size: var(--fs-50);
+   font-weight: var(--fw-800);
+}
+
+.title h3::after {
+   content: '';
+   width: 20%;
+   height: 80%;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 0;
+   border-bottom: 1px dashed gray;
+
+}
+
+/* SECTIONS HEADER END */

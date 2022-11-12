@@ -1,0 +1,13 @@
+
+.contact .item  i {
+   width: 70px;
+   height: 70px;
+   margin: auto;
+   background: #f4f4f4;
+   transition: all 0.5s;
+}
+
+.contact  i:hover   {
+   color: white;
+   background: black;
+}

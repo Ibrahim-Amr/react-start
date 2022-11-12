@@ -1,0 +1,38 @@
+/* Nav-bar */
+#mainNav {
+   transition: all .5s;
+}
+
+.logo a {
+   font-size: 28px;
+   color: white;
+   font-weight: 600;
+   letter-spacing: 1px;
+}
+
+.nav-links a {
+   font-size: 16px;
+   font-weight: 600;
+   color: white;
+   letter-spacing: 0.4px;
+
+}
+
+.nav-item .uline::before {
+   content: "";
+   position: absolute;
+   width: 0%;
+   height: 2px;
+   background-color: #fff;
+   bottom: 5px;
+   left: 1;
+   visibility: hidden;
+   transition: all 0.3s ease-in-out 0s;
+
+}
+
+.nav-item:hover .uline::before {
+   width: 50%;
+   visibility: visible;
+
+}
